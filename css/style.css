@@ -1,0 +1,46 @@
+body {
+	background-image: url("http://images5.fanpop.com/image/photos/27900000/Planets-diagram-space-27962920-1920-1080.jpg");
+	color: white;
+}
+
+#container {
+	background-color: black;
+	width: 960px;
+	margin: 0 auto;
+	height: 800px;
+}
+
+.cell{
+	display: inline-block;
+	float:left;
+	width: 150px;
+	height: 150px;
+}
+
+.rightLine {
+	border-right: 3px solid blue;
+}
+
+
+.bottomLine {border-bottom: 3px solid orange;}
+
+.clear{
+	clear: both;
+}
+
+h1 { 
+	text-align: center;
+	color: #ff88ff;
+	clear: both;
+}
+
+h2 {
+	color: yellow;
+}
+
+.planet { 
+	border: 3px dotted lightgrey;
+	width: 600px;
+	padding: 10px 45px;
+	margin: 15px auto;
+}

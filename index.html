@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="planetApp">
+  <head>
+    <title>Planets!</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+
+    <div ng-controller="tttCtrl" id="container">
+
+      <div ng-repeat="cell in cells track by $index"
+       ng-class="{cell:true, clear: ($index % 3 == 0),
+        rightLine: ($index % 3 != 2),
+        bottomLine: ($index <= 5) }"
+      ng-click="updateTurn($index);"
+        >{{ cell }}</div>
+
+    </div>
+  </body>
+</html>
