@@ -1,46 +1,212 @@
+
+
+ /****** Asthetic Backgroound Designs ******/
+
 body {
-	background-image: url("http://images5.fanpop.com/image/photos/27900000/Planets-diagram-space-27962920-1920-1080.jpg");
+	background-image: linear-gradient(90deg, #2ACA76 0%, #2ACAB3 100%);
 	color: white;
+	background-color: RGBA(249, 249, 249, 1);
+	border: 1px dashed RGBA(53, 68, 79, .8);
+	margin: 15px;
+	height: 1000px;
+	font-family: 'Lemon', cursive;
 }
 
-#container {
-	background-color: black;
-	width: 960px;
-	margin: 0 auto;
-	height: 800px;
+.whosePlaying {
+	height: 100px;
 }
+
+input {
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+input[type = placeholder] {
+	margin-right: 10px;
+}
+
+
+
+#container {	
+	width: 1050px;
+	margin: 0 auto;
+	text-align: center;
+	/*border: 1px dashed red;*/
+	
+}
+
+#tictac {
+	width: 456px;  /* centers board */
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*border: 1px dashed red;*/
+
+}
+
+.scorepanel {
+	height: 400px;
+	width: 200px;
+	background-color: RGBA(53, 68, 79, .8);
+	position: absolute;
+	top: 180px;
+	left: 150px;
+	border: 1px solid RGBA(53, 68, 79, 1);
+}
+
+
+/*** Individual Cell Design ***/
 
 .cell{
-	display: inline-block;
 	float:left;
 	width: 150px;
 	height: 150px;
+	margin: auto;
+	background-color: RGBA(29, 217, 159, 1);
+	border: 1px solid RGBA(94, 12, 22, 1);
+	border-radius: 10px;
+	font-size: 100px;
+	/* box-shadow: -5px 5px 20px 10px red;*/
+	
 }
 
+
+.cell:hover {
+	background-color: RGBA(255, 89, 62, 1);
+}
+
+
+
+
+/*
 .rightLine {
 	border-right: 3px solid blue;
 }
 
 
-.bottomLine {border-bottom: 3px solid orange;}
+.bottomLine {border-bottom: 3px solid blue;}
+*/
+
 
 .clear{
 	clear: both;
 }
 
+.scorepanel p {
+	padding-top: 10px;
+}
+
+.scorepanel h2 {
+	padding: 10px;
+	margin: 10px;
+}
+
+.playerscount {
+	padding-top: 30px;
+}
+
+#dominate {
+	color: white;
+}
+
+
+.winner {
+	width: 100%;
+	height: 150px;
+	background-color: RGBA(53, 68, 79, .7);
+	position: fixed;
+	left: 0;
+	bottom: 340px;
+	border-bottom: inset 2px RGBA(53, 68, 79, .7);
+	border-top: inset 2px RGBA(53, 68, 79, .3);
+
+
+}
+
+.winner h3 {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	background-color: RGBA(255, 94, 84, 1) ;
+
+}
+
+.intro {
+	
+
+}
+
+.intro p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+
+/*** Text and Stuff ***/
+
 h1 { 
 	text-align: center;
-	color: #ff88ff;
+	width: 800px;
+	margin: 30px auto;
+	/*color: rgba(20, 170, 160, 1);*/
+	color: white;
 	clear: both;
+	font-size: 50px;
+	text-shadow: 1px 1px .3px rgba(0, 107, 101, 1);
+	border-bottom: 1.2px solid rgba(0, 107, 101, .4);
+	padding-bottom: 20px;
+	
+
 }
 
 h2 {
-	color: yellow;
+	text-align: center;
+	color: RGBA(255, 79, 9, 1);
+	clear: both;
+	font-size: 40px;
+	text-shadow: 1px 1px 1px rgba(190, 150, 150, 1);
 }
 
-.planet { 
-	border: 3px dotted lightgrey;
-	width: 600px;
-	padding: 10px 45px;
-	margin: 15px auto;
+p {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	color: RGBA(28, 35, 41, .5);
+	clear: both;
+	/*text-shadow: 1px 1px 1px rgba(190, 150, 150, 1);*/
 }
+
+
+input, button {
+	height: 35px;
+	width: 200px;
+	font-size: 20px;
+	border-radius: 2px;
+	border: 1px solid RGBA(28, 35, 41, .8);
+	padding-right: 5px;
+}
+
+
+
+label {
+	display: inline-block;
+	font-size: 20px;
+	padding-right: 15px;
+	color: RGBA(28, 35, 41, .5);
+}
+
+button {
+	border-radius: 2px;
+	color: RGBA(53, 68, 79, .8);
+	height: 40px;
+	background-color: RGBA(255, 94, 84, 1) ;
+	border-color: RGBA(255, 128, 20, 1);
+	text-shadow: 1px .2px 0px rgba(123, 77, 20, 1);
+	box-shadow:  1px 3px 1px 0px RGBA(255, 94, 84, 1) ;
+
+}
+
+
+
+
